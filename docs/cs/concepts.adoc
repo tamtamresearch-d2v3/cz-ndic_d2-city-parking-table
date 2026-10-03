@@ -5,13 +5,13 @@ kapacitu, způsob využití, provozovatele a provozní dobu. Aktuální obsazeno
 `cz-ndic_d2-city-parking-status`, který na tabulky parkovišť odkazuje.
 
 Formát vychází z DATEX II publikace `prk:ParkingTablePublication` <<TS16157-6>> a je *lehkou
-podmnožinou* profilu pro parkoviště nákladních vozidel (ITP): používá jen nejnižší úroveň hierarchie –
+podmnožinou* profilu pro parkoviště nákladních vozidel (ITP): používá jen nejvyšší (kořenovou) úroveň hierarchie (`layer` = 0) –
 parkoviště (`prk:Place`) jako celek. Polohy parkovišť se popisují metodami modelu DATEX II <<EN16157-3>> přímo v tabulce.
 
 [[obalka]]
 === Obálka a hlavička publikace
 
-Každá zpráva je dokument DATEX II 3 s kořenovým elementem `d2:payload`. Atribut `xsi:type` kořenového elementu určuje typ
+Každá zpráva je dokument DATEX II 3 s kořenovým elementem `d2:payload`. Atribut `@xsi:type` kořenového elementu určuje typ
 publikace (zde `prk:ParkingTablePublication`), atribut `modelBaseVersion="3"` verzi modelu a atribut `@lang` výchozí jazyk
 textů.
 

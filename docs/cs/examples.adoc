@@ -14,7 +14,7 @@ include::{samplesdir}/pr-table.xml[tags=**]
 
 Obálka a hlavička::
 Kořen `d2:payload` typu `prk:ParkingTablePublication` s atributy `@profileName` a `@profileVersion`,
-`publicationTime` a `publicationCreator`. `feedType` odkazuje na zdroj dat.
+`publicationTime` a `publicationCreator`. `feedType` odkazuje na distribuci (zdroj dat).
 
 Parkoviště::
 * Každé parkoviště má identifikátor GUID, název a úroveň 0 (`layer`, `type` = `place`).

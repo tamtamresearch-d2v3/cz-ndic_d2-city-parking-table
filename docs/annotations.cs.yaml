@@ -23,7 +23,7 @@ FacilityObject:
 CommonComponents:
   operatingPattern:
     card: 0..1
-    ndic: Jeden scénář užití (`UsageScenario`); parkoviště P+R má `parkAndRide`.
+    ndic: Jeden scénář užití (`prk:UsageScenario`); parkoviště P+R má `parkAndRide`.
   characteristics:
     card: 0..1
     ndic: Jedna kapacita parkoviště (parkoviště slouží jednomu typu vozidel).
