@@ -14,7 +14,7 @@ include::{samplesdir}/pr-table.xml[tags=**]
 
 Envelope and header::
 Root `d2:payload` of the type `prk:ParkingTablePublication` with the attributes `@profileName` and `@profileVersion`,
-`publicationTime` and `publicationCreator`. `feedType` refers to the data source.
+`publicationTime` and `publicationCreator`. `feedType` refers to the distribution (data source).
 
 Car parks::
 * Each car park has a GUID identifier, a name and level 0 (`layer`, `type` = `place`).
