@@ -19,6 +19,6 @@
 ** The profile is narrowed for city car parks: only the level `place`, without the motorway and truck parking
    scenarios (`truckParking`, `motorwayParking`, `nearbyMotorwayParking`, `restArea`, `serviceArea`), without
    OpenLR in the opposite direction and without unknown opening times.
-* Origin of the data: the data on P+R car parks published by NDIC so far are limited; the static description (capacity,
-  operator, opening times, coordinates) will be added by the car park operators according to the data template.
+* Capacity, operator, opening times and display coordinates are optional; they are not given for car parks where
+  they are not known.
 * The sample `pr-table.xml` is converted from NDIC production data (1 Oct 2026).

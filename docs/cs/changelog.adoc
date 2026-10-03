@@ -19,6 +19,6 @@
 ** Profil je zúžen pro městská parkoviště: jen úroveň `place`, bez scénářů dálničního a nákladního
    parkování (`truckParking`, `motorwayParking`, `nearbyMotorwayParking`, `restArea`, `serviceArea`), bez
    OpenLR v opačném směru a bez neznámé provozní doby.
-* Původ dat: údaje o parkovištích P+R dosud publikované NDIC jsou omezené; statický popis (kapacitu,
-  provozovatele, provozní dobu, souřadnice) doplní správce parkovišť podle šablony podkladů.
+* Kapacita, provozovatel, provozní doba a souřadnice pro zobrazení jsou nepovinné; u parkovišť, kde nejsou
+  známy, se neuvádějí.
 * Vzorek `pr-table.xml` je převeden z produkčních dat NDIC (1. 10. 2026).
