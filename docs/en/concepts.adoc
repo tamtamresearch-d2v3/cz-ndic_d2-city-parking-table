@@ -5,7 +5,7 @@ identification, name, location, capacity, usage, operator and opening times. The
 provided by the separate format `cz-ndic_d2-city-parking-status`, which references the car park tables.
 
 The format is based on the DATEX II publication `prk:ParkingTablePublication` <<TS16157-6>> and is a *light
-subset* of the profile for truck parking (ITP): it uses only the lowest level of the hierarchy –
+subset* of the profile for truck parking (ITP): it uses only the top (root) level of the hierarchy (`layer` = 0) –
 the car park (`prk:Place`) as a whole. Car park locations are described by the methods of the DATEX II model <<EN16157-3>> directly in the table.
 
 [[obalka]]
