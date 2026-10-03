@@ -11,7 +11,7 @@ the car park (`prk:Place`) as a whole. Car park locations are described by the m
 [[obalka]]
 === Envelope and publication header
 
-Each message is a DATEX II 3 document with the root element `d2:payload`. The `xsi:type` attribute of the root element
+Each message is a DATEX II 3 document with the root element `d2:payload`. The `@xsi:type` attribute of the root element
 specifies the publication type (here `prk:ParkingTablePublication`), the `modelBaseVersion="3"` attribute
 the model version and the `@lang` attribute the default language of texts.
 

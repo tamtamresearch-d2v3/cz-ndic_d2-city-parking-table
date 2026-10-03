@@ -23,7 +23,7 @@ FacilityObject:
 CommonComponents:
   operatingPattern:
     card: 0..1
-    ndic: One usage scenario (`UsageScenario`); a P+R car park has `parkAndRide`.
+    ndic: One usage scenario (`prk:UsageScenario`); a P+R car park has `parkAndRide`.
   characteristics:
     card: 0..1
     ndic: One capacity of the car park (the car park serves one type of vehicles).
