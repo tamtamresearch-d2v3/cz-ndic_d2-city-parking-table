@@ -36,4 +36,4 @@ SingleRoadLinearLocation:
     ndic: Jen u parkovišť, jejichž úsek má liniovou polohu ALERT-C.
 Location:
   coordinatesForDisplay:
-    ndic: Bod parkoviště; dokud správce nedodá přesný bod (např. vjezd), střed příjezdové komunikace.
+    ndic: Bod parkoviště; dokud provozovatel nedodá přesný bod (např. vjezd), střed příjezdové komunikace.

@@ -88,7 +88,7 @@ Každé parkoviště je jeden element `hierarchyElementGeneral` typu `prk:Place`
 |`commonComponents/operatingPattern` |u P+R povinný |způsob využití: `prk:UsageScenario` s `type` = `parkAndRide`
 |`operator` |doporučený |provozovatel (název, kontakt – e-mail, telefon)
 |`operatingHours` |doporučený |provozní doba (nepřetržitě); neznámá provozní doba se neuvádí
-|`externalIdentifier` |nepovinný |identifikátor parkoviště u správce
+|`externalIdentifier` |nepovinný |identifikátor parkoviště u provozovatele
 |===
 
 .Parkoviště P+R (vzorek `pr-table.xml`)
@@ -116,7 +116,7 @@ popisují tentýž úsek.
 |Průběh polohy |`gmlLineString` |linie v ETRS89; jediné přesné souřadnice počátku a konce úseku (<<prubeh>>)
 |===
 
-* Bod parkoviště (`coordinatesForDisplay`) leží na popsaném úseku. Dokud správce parkoviště nedodá přesný
+* Bod parkoviště (`coordinatesForDisplay`) leží na popsaném úseku. Dokud provozovatel parkoviště nedodá přesný
   bod (např. vjezd), je bodem střed příjezdové komunikace.
 * Na předdefinované polohy (formát `x-format:cz-ndic_d2-pls-v2.0`) se neodkazuje – tabulka je soběstačná.
 
