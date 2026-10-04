@@ -5,5 +5,5 @@ date: '2026-09-28'
 author:
   name: Petr Bureš
   company: TamTam Research s.r.o.
-perex: 'This document describes the data format used to provide the static description of urban car parks and park-and-ride sites: identifier, name, location, capacity, usage, operator and opening times. Messages of the format cz-ndic_d2-city-parking-status with the current occupancy reference this table of car parks. The format is based on the ParkingTablePublication of the DATEX II 3.7 model and is a light subset of the profile for truck parking (ITP).'
+perex: 'This document describes the data format used to provide the static description of urban car parks and park-and-ride sites: identifier, name, location, capacity, usage, operator and opening times. Messages of the format x-format:cz-ndic_d2-city-parking-status-v1.0 with the current occupancy reference this table of car parks. The format is based on the prk:ParkingTablePublication of the DATEX II 3.7 model and is a light subset of the profile for truck parking (ITP).'
 keywords: DATEX II, NDIC, ParkingTablePublication

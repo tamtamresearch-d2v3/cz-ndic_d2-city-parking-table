@@ -2,7 +2,7 @@
 
 Formát poskytuje statický popis městských parkovišť a parkovišť P+R: identifikaci, název, polohu,
 kapacitu, způsob využití, provozovatele a provozní dobu. Aktuální obsazenost poskytuje samostatný formát
-`cz-ndic_d2-city-parking-status`, který na tabulky parkovišť odkazuje.
+`x-format:cz-ndic_d2-city-parking-status-v1.0`, který na tabulky parkovišť odkazuje.
 
 Formát vychází z DATEX II publikace `prk:ParkingTablePublication` <<TS16157-6>> a je *lehkou
 podmnožinou* profilu pro parkoviště nákladních vozidel (ITP): používá jen nejvyšší (kořenovou) úroveň hierarchie (`layer` = 0) –
@@ -57,7 +57,7 @@ Publikace obsahuje jednu či více tabulek parkovišť `parkingTable`, rozdělen
 * `CzechParkAndRideTable` – parkoviště P+R,
 * `CzechCityParkingTable` – ostatní městská parkoviště.
 
-Na identifikátor a verzi tabulek odkazuje stavová publikace (`cz-ndic_d2-city-parking-status`). Nová verze
+Na identifikátor a verzi tabulek odkazuje stavová publikace (`x-format:cz-ndic_d2-city-parking-status-v1.0`). Nová verze
 tabulky vzniká při změně jejího obsahu; nezměněné parkoviště si ponechává svůj identifikátor i verzi.
 
 .Tabulka parkovišť P+R (vzorek `pr-table.xml`)
@@ -118,11 +118,11 @@ popisují tentýž úsek.
 
 * Bod parkoviště (`coordinatesForDisplay`) leží na popsaném úseku. Dokud správce parkoviště nedodá přesný
   bod (např. vjezd), je bodem střed příjezdové komunikace.
-* Na předdefinované polohy (formát `cz-ndic_d2-pls`) se neodkazuje – tabulka je soběstačná.
+* Na předdefinované polohy (formát `x-format:cz-ndic_d2-pls-v2.0`) se neodkazuje – tabulka je soběstačná.
 
 IMPORTANT: Metody popisu polohy jsou popsány shodně ve všech formátech NDIC, které je používají. Grafické
 ukázky metod (lokace ALERT-C a směr, obousměrná poloha v OpenLR, složení polohy z úseků Global Network)
-obsahuje dokumentace formátu `cz-ndic_d2-pls`, kapitola Popisování poloh.
+obsahuje dokumentace formátu `x-format:cz-ndic_d2-pls-v2.0`, kapitola Popisování poloh.
 
 .Poloha parkoviště (vzorek `pr-table.xml`)
 [source,xml]
@@ -144,6 +144,9 @@ include::{kitdir}/shared/cs/poloha/gn.adoc[]
 === Popis polohy pomocí ALERT-C
 
 include::{kitdir}/shared/cs/poloha/alertc.adoc[]
+
+.Popis polohy pomocí ALERT-C – směr, sekundární a primární lokace
+image::alertc-poloha.svg[ALERT-C – směr a lokace,width=680,align="center"]
 
 [[prubeh]]
 === Průběh polohy

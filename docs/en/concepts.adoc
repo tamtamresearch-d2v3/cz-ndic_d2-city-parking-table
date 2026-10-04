@@ -2,7 +2,7 @@
 
 The format provides the static description of city car parks and park-and-ride (P+R) car parks:
 identification, name, location, capacity, usage, operator and opening times. The current occupancy is
-provided by the separate format `cz-ndic_d2-city-parking-status`, which references the car park tables.
+provided by the separate format `x-format:cz-ndic_d2-city-parking-status-v1.0`, which references the car park tables.
 
 The format is based on the DATEX II publication `prk:ParkingTablePublication` <<TS16157-6>> and is a *light
 subset* of the profile for truck parking (ITP): it uses only the top (root) level of the hierarchy (`layer` = 0) –
@@ -57,7 +57,7 @@ issued (`versionTime`):
 * `CzechParkAndRideTable` – P+R car parks,
 * `CzechCityParkingTable` – other city car parks.
 
-The status publication (`cz-ndic_d2-city-parking-status`) references the identifier and version of the
+The status publication (`x-format:cz-ndic_d2-city-parking-status-v1.0`) references the identifier and version of the
 tables. A new version of a table is issued when its content changes; an unchanged car park keeps its
 identifier and version.
 
@@ -119,11 +119,11 @@ describe the same section.
 
 * The point of the car park (`coordinatesForDisplay`) lies on the described section. Until the car park
   operator provides the exact point (e.g. the entrance), the point is the middle of the access road.
-* Predefined locations (format `cz-ndic_d2-pls`) are not referenced – the table is self-contained.
+* Predefined locations (format `x-format:cz-ndic_d2-pls-v2.0`) are not referenced – the table is self-contained.
 
 IMPORTANT: The location referencing methods are described identically in all NDIC formats that use them.
 Graphical illustrations of the methods (ALERT-C locations and direction, bidirectional location in OpenLR, location
-composed of Global Network sections) are given in the documentation of the format `cz-ndic_d2-pls`,
+composed of Global Network sections) are given in the documentation of the format `x-format:cz-ndic_d2-pls-v2.0`,
 chapter Location referencing.
 
 .Location of a car park (sample `pr-table.xml`)
@@ -146,6 +146,9 @@ include::{kitdir}/shared/en/poloha/gn.adoc[]
 === ALERT-C location referencing
 
 include::{kitdir}/shared/en/poloha/alertc.adoc[]
+
+.ALERT-C location referencing – direction, secondary and primary location
+image::alertc-poloha-en.svg[ALERT-C – direction and locations,width=680,align="center"]
 
 [[prubeh]]
 === Location path
