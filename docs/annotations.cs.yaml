@@ -33,7 +33,7 @@ SingleRoadLinearLocation:
     ndic: Úsek sítě Global Network, na kterém leží bod parkoviště; dva úseky, leží-li bod na jejich hranici.
   alertCLinear:
     card: 0..1
-    ndic: Jen u parkovišť, jejichž úsek má lineární polohu ALERT-C.
+    ndic: Jen u parkovišť, jejichž úsek má liniovou polohu ALERT-C.
 Location:
   coordinatesForDisplay:
     ndic: Bod parkoviště; dokud správce nedodá přesný bod (např. vjezd), střed příjezdové komunikace.
